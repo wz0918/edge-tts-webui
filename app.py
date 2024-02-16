@@ -11,7 +11,11 @@ SUPPORTED_VOICES = {
     'Yunxia-云夏': 'zh-CN-YunxiaNeural',
     'Yunyang-云扬': 'zh-CN-YunyangNeural',
     'liaoning-Xiaobei-晓北辽宁': 'zh-CN-liaoning-XiaobeiNeural',
-    'shaanxi-Xiaoni-陕西晓妮': 'zh-CN-shaanxi-XiaoniNeural'
+    'shaanxi-Xiaoni-陕西晓妮': 'zh-CN-shaanxi-XiaoniNeural',
+    'de-DE-KillianNeural': 'de-DE-KillianNeural',
+    'de-DE-KatjaNeural': 'de-DE-KatjaNeural',
+    'en-US-SteffanNeural': 'en-US-SteffanNeural',
+    'en-US-JennyNeural': 'en-US-JennyNeural',
 }
 
 # 发音切换
@@ -67,7 +71,8 @@ with gr.Blocks(css="style.css", title="文本转语音") as demo:
             voices = gr.Dropdown(choices=[
                 "Xiaoxiao-晓晓", "Xiaoyi-晓伊", "Yunjian-云健", "Yunxi-云希",
                 "Yunxia-云夏", "Yunyang-云扬", "liaoning-Xiaobei-晓北辽宁",
-                "shaanxi-Xiaoni-陕西晓妮"
+                "shaanxi-Xiaoni-陕西晓妮","de-DE-KillianNeural","de-DE-KatjaNeural",
+                "en-US-SteffanNeural","en-US-JennyNeural"
             ],
                                  value="Xiaoxiao-晓晓",
                                  label="发音",
